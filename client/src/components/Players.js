@@ -1,11 +1,12 @@
 import React from 'react';
+import Player from './Player';
 
-export default function Player({ playersList }) {
+export default function Players({ playersList }) {
     return (
         <>
             <h1>Players</h1>
             {playersList.map(player => 
-                <h2 key={player.id}>Name: {player.name} Country: {player.country}</h2>)}
+                <Player key={player.id} player={player}/>)}
         </>
     )
 };
