@@ -5,9 +5,8 @@ export default function SearchForm(props) {
 
     
     return (
-        <form>
+        <form onSubmit={searchNow}>
             <div>
-                <label htmlFor="countryInput">Country Search</label>
                 <input
                     type="text"
                     id='countryInput'
@@ -17,10 +16,9 @@ export default function SearchForm(props) {
                     value={country}
                     
                 />
-                <button type='button' onClick={searchNow} >Search Country</button>
+                <button type='submit' onClick={searchNow} >Search By Country</button>
             </div>
             <div>
-                <label htmlFor="popularityInput">Popularity Search</label>
                 <input
                     type="text"
                     id='popularityInput'
@@ -30,7 +28,7 @@ export default function SearchForm(props) {
                     value={popular}
                     
                 />
-                <button type='button' onClick={searchNow}>Search</button>
+                <button type='submit' onClick={searchNow}>Search By Popularity</button>
             </div>
 
         </form>
