@@ -22,31 +22,31 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why would you use class component over function components (removing hooks from the question)?
+- [x] Why would you use class component over function components (removing hooks from the question)?
 
 Functions seem to be less clunky and more readable. Classes are probably too fancy and come with a lot of baggage like the constructor and its special lifecycle methods.
 
-- [ ] Name three lifecycle methods and their purposes.
+- [x] Name three lifecycle methods and their purposes.
 
 constructor: it provides the component with the data it needs to work, this include the properties and the state
 render: it tells the component what to attach to the DOM.
 componentDidMount: this runs once during the licycle after the first render. it can be used to make AJAX calls
 
-- [ ] What is the purpose of a custom hook?
+- [x] What is the purpose of a custom hook?
 
 A custom hook is a function so it's main purpose is fostering reusability, in other words, making use of the DRY concept
 
-- [ ] Why is it important to test our apps?
+- [x] Why is it important to test our apps?
 To ensure the app works as it's supposed to and not delivering false positives.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [x] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 - [ ] Run `yarn` to download dependencies.
 - [ ] Run the server using `yarn start` or `node server.js`.
 - [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
