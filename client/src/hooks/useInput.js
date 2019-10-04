@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-export default function useInput(initialValue) {
-    const [value, setValue] = useState(initialValue);
+export default function useInput(key, initialValue) {
+    const [value, setValue] = useState(key, initialValue);
 
-    const handleChange = event => {
-        setValue(event.target.value);
+    const handleChange = e => {
+        
+        setValue(e.target.value);
     };
-
-    return [value, handleChange];
+    
+    return [value, setValue, handleChange];
 };
