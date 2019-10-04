@@ -9,7 +9,6 @@ export default function Players({ playersList }) {
     const [country, setCountry, countryChange] = useInput('');
     const [popular, setPopular, popularChange] = useInput('');
     const [searchValue, setSearchValue] = useState('');
-    console.log(searchValue)
 
     const searchNow = event => {       
         event.preventDefault();        

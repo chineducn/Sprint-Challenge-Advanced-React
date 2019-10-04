@@ -1,9 +1,7 @@
 import React from 'react';
 
 export default function SearchForm(props) {
-    const { country, changeCountry, popular, changePopular, searchNow } = props;
-
-    
+    const { country, changeCountry, popular, changePopular, searchNow } = props;    
     return (
         <form onSubmit={searchNow}>
             <div>
@@ -13,8 +11,7 @@ export default function SearchForm(props) {
                     name='country'
                     placeholder='Country'
                     onChange={changeCountry}
-                    value={country}
-                    
+                    value={country}                    
                 />
                 <button type='submit' onClick={searchNow} >Search By Country</button>
             </div>
@@ -25,12 +22,10 @@ export default function SearchForm(props) {
                     name='popularity'
                     placeholder='high/low'
                     onChange={changePopular}
-                    value={popular}
-                    
+                    value={popular}                    
                 />
                 <button type='submit' onClick={searchNow}>Search By Popularity</button>
             </div>
-
         </form>
     )
 }
