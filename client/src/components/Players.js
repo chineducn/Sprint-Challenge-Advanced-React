@@ -5,7 +5,7 @@ export default function Player({ playersList }) {
         <>
             <h1>Players</h1>
             {playersList.map(player => 
-            <h2 key={player.id}>{player.name}</h2>)}
+                <h2 key={player.id}>Name: {player.name} Country: {player.country}</h2>)}
         </>
     )
 };
