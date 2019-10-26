@@ -11,7 +11,11 @@ export default (url, initialData) => {
                 setData(response.data)
             })
             .catch(error => {
-                alert(`Error: ${error.response.status} ${error.response.statusText}`)
+                if (error.response) {
+                    alert(`Error: ${error.response.status} ${error.response.statusText}`);
+                } else {
+                    alert(error.message);
+                }               
             });
     }, [url])
     return data;
