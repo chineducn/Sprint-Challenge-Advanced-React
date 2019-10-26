@@ -6,10 +6,12 @@ import PlayerList from '../components/PlayerList';
 let tools;
 const players = [
     {
-        name: 'Hun'
+        name: 'Hun',
+        id: 1,
     },
     {
-        name: 'June'
+        name: 'June',
+        id: 2,
     }
 
 ]
