@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default (url, initialData) => {
@@ -11,7 +11,6 @@ export default (url, initialData) => {
                 setData(response.data)
             })
             .catch(error => {
-                debugger
                 alert(`Error: ${error.response.status} ${error.response.statusText}`)
             });
     }, [url])

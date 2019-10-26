@@ -1,5 +1,6 @@
 import React from 'react';
+import { Card } from '../styles';
 
 export default ({ player }) => {
-    return <div>{player.name}</div>
+    return <Card>{player.name}</Card>
 }
